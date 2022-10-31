@@ -28,6 +28,16 @@ lsp_installer.on_server_ready(function(server)
         local jdtls_opts = require("lsp.settings.jdtls")
         opts = vim.tbl_deep_extend("force", jdtls_opts, opts)
     end
+
+    if server.name == "gopls" then
+        local gopls_opts = require("lsp.settings.gopls")
+        opts = vim.tbl_deep_extend("force", gopls_opts, opts)
+    end
+
+    if server.name == "graphql" then
+        local graphql_opts = require("lsp.settings.graphql")
+        opts = vim.tbl_deep_extend("force", graphql_opts, opts)
+    end
     server:setup(opts)
 
 
