@@ -47,4 +47,9 @@ return require('packer').startup(function(use)
     -- git sign
     use "lewis6991/gitsigns.nvim"
 
+    -- Buffer line 
+    use "kyazdani42/nvim-web-devicons" 
+    use "akinsho/bufferline.nvim"
+    use "moll/vim-bbye"
+     
 end)

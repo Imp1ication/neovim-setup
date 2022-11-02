@@ -8,6 +8,7 @@ require "general.treesitter"
 require "general.autopairs"
 require "general.toggleterm"
 require "general.gitsigns"
+require "general.bufferline"
 
 require "lualine-config"
 require "lsp"
