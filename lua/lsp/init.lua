@@ -6,3 +6,5 @@ end
 require("lsp.lsp-installer")
 require("lsp.handlers").setup()
 
+require'lspconfig'.jdtls.setup{}
+

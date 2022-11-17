@@ -1,9 +1,10 @@
 local options = {
-    clipboard = unnamedplus,
+    clipboard = "unnamedplus",
 
     nu = true,
     relativenumber = true,
     numberwidth = 4,
+    cursorline = true,
 
     tabstop = 4,
     softtabstop = 4,
@@ -15,16 +16,20 @@ local options = {
     smartindent = true,
     smartcase = true,
 
-    wrap = false,
-    
+    wrap = true,
+    linebreak = true,
+    scrolloff = 8,
+    sidescrolloff = 8,
+    showtabline = 2,
+
     splitbelow = true,
     splitright = true,
     
-    scrolloff = 8,
-    sidescrolloff =8,
-    showtabline = 2,
-    
     signcolumn = "yes",
+
+    timeoutlen = 300,
+    updatetime = 300,
+    completeopt = { "menuone", "noselect" },
 }
 
 for k, v in pairs(options) do

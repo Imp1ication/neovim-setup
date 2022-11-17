@@ -25,7 +25,13 @@ keymap("n", "<C-h>", "<C-w>h", opts)
 keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
-keymap("n", "<leader>e", ":Lex 20<CR>", opts)
+keymap("n", "<leader>e", ":Explor 20<CR>", opts)
+
+-- Move in warpline
+keymap("n", "j", "gj", opts)
+keymap("n", "k", "gk", opts)
+keymap("n", "gj", "j", opts)
+keymap("n", "gk", "k", opts)
 
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize -2<CR>", opts)
@@ -40,6 +46,7 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
 -- Insert --
 keymap("i", "jk", "<ESC>", opts)
+keymap("i", "kj", "<ESC>", opts)
 
 
 -- Visual --

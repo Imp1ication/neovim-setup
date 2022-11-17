@@ -30,7 +30,8 @@ return require('packer').startup(function(use)
     -- LSP 
     use "neovim/nvim-lspconfig"
     use "williamboman/nvim-lsp-installer"
-
+    use "mfussenegger/nvim-jdtls"
+    
     -- Treesitter
     use { 
         "nvim-treesitter/nvim-treesitter",

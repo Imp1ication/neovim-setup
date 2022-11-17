@@ -12,3 +12,4 @@ require "general.bufferline"
 
 require "lualine-config"
 require "lsp"
+
