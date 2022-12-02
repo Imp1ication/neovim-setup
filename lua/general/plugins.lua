@@ -10,6 +10,10 @@ return require('packer').startup(function(use)
         "nvim-lualine/lualine.nvim",
         requires = { "kyazdani42/nvim-web-devicons", opt = true }
     }
+    use "bluz71/vim-nightfly-colors"
+    use "EdenEast/nightfox.nvim"
+    use "Mofiqul/vscode.nvim"
+
 
     -- Telescope
     use "nvim-lua/plenary.nvim"
@@ -29,7 +33,10 @@ return require('packer').startup(function(use)
      
     -- LSP 
     use "neovim/nvim-lspconfig"
-    use "williamboman/nvim-lsp-installer"
+    use "williamboman/mason.nvim"
+    use "williamboman/mason-lspconfig.nvim"
+    use {"glepnir/lspsaga.nvim", branch = "main"}
+
     use "mfussenegger/nvim-jdtls"
     
     -- Treesitter

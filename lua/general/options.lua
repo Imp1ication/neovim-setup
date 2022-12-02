@@ -16,7 +16,7 @@ local options = {
     smartindent = true,
     smartcase = true,
 
-    wrap = true,
+    wrap = false,
     linebreak = true,
     scrolloff = 8,
     sidescrolloff = 8,

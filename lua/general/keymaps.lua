@@ -43,10 +43,14 @@ keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
+-- add empty line without get into insert mode
+keymap("n", "<CR>", "o<Esc>k", opts)
+
 
 -- Insert --
 keymap("i", "jk", "<ESC>", opts)
 keymap("i", "kj", "<ESC>", opts)
+
 
 
 -- Visual --
@@ -58,8 +62,8 @@ keymap("v", "p", '"_dP', opts)
 
 
 -- Telescope --
-vim.keymap.set("n", "<leader>t", ":Telescope find_files<CR>", {})
-vim.keymap.set("n", "<leader>g", ":Telescope live_grep<CR>", {})
+vim.keymap.set("n", "<leader>ff", ":Telescope find_files<CR>", {})
+vim.keymap.set("n", "<leader>lg", ":Telescope live_grep<CR>", {})
 
 
 -- ToggleTerm --
