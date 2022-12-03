@@ -66,7 +66,7 @@ db.section.header.opts.hl = "Include"
 
 -- Center --
 db.section.buttons.val = {
-    db.button("e", "  New file", ":ene <BAR> startinsert <CR>"),
+    db.button("n", "  New file", ":ene <BAR> startinsert <CR>"),
     db.button("f", "  Find file", ":Telescope find_files <CR>"),
 --    db.button("p", "  Find project", ":Telescope projects <CR>"),
     db.button("r", "  Recently used files", ":Telescope oldfiles <CR>"),
