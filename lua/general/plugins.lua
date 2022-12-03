@@ -4,7 +4,7 @@ return require('packer').startup(function(use)
 
     -- Theme
     use "folke/tokyonight.nvim"
-    use "ellisonleao/gruvbox.nvim" 
+    use "ellisonleao/gruvbox.nvim"
     use "shaunsingh/nord.nvim"
     use {
         "nvim-lualine/lualine.nvim",
@@ -30,7 +30,7 @@ return require('packer').startup(function(use)
 	-- Snippets
     use { "L3MON4D3/LuaSnip", commit = "8f8d493e7836f2697df878ef9c128337cbf2bb84" } --snippet engine
     use { "rafamadriz/friendly-snippets", commit = "2be79d8a9b03d4175ba6b3d14b082680de1b31b1" } -- a bunch of snippets to use
-     
+
     -- LSP 
     use "neovim/nvim-lspconfig"
     use "williamboman/mason.nvim"
@@ -38,9 +38,9 @@ return require('packer').startup(function(use)
     use {"glepnir/lspsaga.nvim", branch = "main"}
 
     use "mfussenegger/nvim-jdtls"
-    
+
     -- Treesitter
-    use { 
+    use {
         "nvim-treesitter/nvim-treesitter",
         run = ":TSUpdate",
     }
@@ -48,7 +48,7 @@ return require('packer').startup(function(use)
 
     -- Auto pair
     use "windwp/nvim-autopairs"
-    
+
     -- Toggleterm 
     use "akinsho/toggleterm.nvim"
 
@@ -56,8 +56,11 @@ return require('packer').startup(function(use)
     use "lewis6991/gitsigns.nvim"
 
     -- Buffer line 
-    use "kyazdani42/nvim-web-devicons" 
+    use "kyazdani42/nvim-web-devicons"
     use "akinsho/bufferline.nvim"
     use "moll/vim-bbye"
-     
+
+    -- Dashboard --
+   -- use "glepnir/dashboard-nvim"
+    use "goolord/alpha-nvim"
 end)
