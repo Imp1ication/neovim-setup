@@ -5,10 +5,10 @@ end
 
 config.setup{
     ensure_installed = {
-        "lua", 
-        "c", 
-        "cpp", 
-        "json", 
+        "lua",
+        "c",
+        "cpp",
+        "json",
         "java",
         "go",
         "graphql",

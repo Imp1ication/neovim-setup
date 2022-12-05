@@ -7,6 +7,7 @@ require "general.treesitter"
 require "general.autopairs"
 require "general.toggleterm"
 require "general.gitsigns"
+require "general.nvim-tree"
 
 require "theme.colorscheme"
 require "theme.bufferline"

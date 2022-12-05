@@ -25,7 +25,6 @@ keymap("n", "<C-h>", "<C-w>h", opts)
 keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
-keymap("n", "<leader>e", ":Explor 20<CR>", opts)
 
 -- Move in warpline
 keymap("n", "j", "gj", opts)
@@ -65,8 +64,10 @@ keymap("v", "p", '"_dP', opts)
 vim.keymap.set("n", "<leader>ff", ":Telescope find_files<CR>", {})
 vim.keymap.set("n", "<leader>lg", ":Telescope live_grep<CR>", {})
 
-
 -- ToggleTerm --
 vim.keymap.set("n", "<C-\\>f", ":ToggleTerm direction=float size=20<CR>", {})
 vim.keymap.set("n", "<C-\\>v", ":ToggleTerm direction=vertical size=70<CR>", {})
 vim.keymap.set("n", "<C-\\>h", ":ToggleTerm direction=horizontal size=20<CR>", {})
+
+-- Nvim Tree --
+keymap("n", "<leader>e", ":NvimTreeToggle<Cr>", opts)
