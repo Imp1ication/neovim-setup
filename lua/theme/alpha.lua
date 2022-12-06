@@ -49,13 +49,12 @@ local header_alt = {
     "",
     "",
 }
-
 local db = require "alpha.themes.dashboard"
 
 db.section.header.val = function()
-    if vim.fn.winwidth(0) > 120 then
+    if vim.fn.winwidth(0) > 150 then
         return header_alt
-    elseif vim.fn.winwidth(0) > 80 then
+    elseif vim.fn.winwidth(0) > 100 then
         return header_mid
     else
         return header_small
@@ -64,14 +63,14 @@ end
 
 db.section.header.opts.hl = "Include"
 
--- Center --
+---- Center --
 db.section.buttons.val = {
     db.button("n", "  New file", ":ene <BAR> startinsert <CR>"),
     db.button("f", "  Find file", ":Telescope find_files <CR>"),
 --    db.button("p", "  Find project", ":Telescope projects <CR>"),
-    db.button("r", "  Recently used files", ":Telescope oldfiles <CR>"),
     db.button("t", "  Find text", ":Telescope live_grep <CR>"),
-    db.button("c", "  Configuration", ":e $MYVIMRC<CR>"),
+    db.button("r", "  Recent files", ":Telescope oldfiles <CR>"),
+    db.button("c", "  Colorscheme", ":Telescope colorscheme <CR>"),
     db.button("q", "  Quit Neovim", ":qa<CR>"),
 }
 

@@ -37,8 +37,6 @@ return require('packer').startup(function(use)
     use "williamboman/mason-lspconfig.nvim"
     use {"glepnir/lspsaga.nvim", branch = "main"}
 
-    use "mfussenegger/nvim-jdtls"
-
     -- Treesitter
     use {
         "nvim-treesitter/nvim-treesitter",
@@ -61,6 +59,11 @@ return require('packer').startup(function(use)
     use "moll/vim-bbye"
 
     -- Dashboard --
-   -- use "glepnir/dashboard-nvim"
-    use "goolord/alpha-nvim"
+    use {
+        'goolord/alpha-nvim',
+        config = function ()
+            require'alpha'.setup(require'alpha.themes.dashboard'.config)
+        end
+    }
+--    use 'glepnir/dashboard-nvim'
 end)

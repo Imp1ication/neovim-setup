@@ -14,7 +14,7 @@ require("lsp.mason")
 require("lsp.lspsaga")
 
 -- Signs --
-local signs = { Error = " ", Warn = " ", Hint = "ﴞ ", Info = " " }
+local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
 
 for type, icon in pairs(signs) do
   local hl = "DiagnosticSign" .. type
@@ -119,7 +119,12 @@ lspconfig["graphql"].setup({
     on_attach = on_attach,
 })
 
-lspconfig["jdtls"].setup({
+--lspconfig["jdtls"].setup({
+--    capabilities = capabilities,
+--    on_attach = on_attach,
+--})
+
+lspconfig["omnisharp"].setup({
     capabilities = capabilities,
     on_attach = on_attach,
 })

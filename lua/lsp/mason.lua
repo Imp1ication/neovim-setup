@@ -1,4 +1,5 @@
 -- import mason plugin safely
+--
 local mason_status, mason = pcall(require, "mason")
 if not mason_status then
   return
@@ -18,8 +19,9 @@ mason_lspconfig.setup({
         "sumneko_lua",
         "jsonls",
         "clangd",
-        "gopls",
+--        "gopls",
         "graphql",
-        "jdtls",
+--        "jdtls",
+        "omnisharp",
     }
 })
